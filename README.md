@@ -1,146 +1,195 @@
-"# Spain-Top-50-Music-Lifecycle-Intelligence-Analysis" 
-\documentclass[conference]{IEEEtran}
-\usepackage{graphicx}
-\usepackage{amsmath}
+# 🎧 Spain Top 50 Music Lifecycle Intelligence Analysis
 
-\title{Content Maturity, Lifecycle Dynamics, and Playlist Rotation: An Exploratory Analysis of Spain’s Top 50 Playlist}
+![Python](https://img.shields.io/badge/Python-3.10-blue)
+![Streamlit](https://img.shields.io/badge/Streamlit-Dashboard-red)
+![EDA](https://img.shields.io/badge/Analytics-EDA-green)
+![Status](https://img.shields.io/badge/Project-Completed-success)
 
-\author{\IEEEauthorblockN{Kaushik Prasad}
-\IEEEauthorblockA{Independent Researcher\\
-Email: your-email@example.com}
-}
+---
 
-\begin{document}
+# 📌 Overview
 
-\maketitle
+This project analyzes the lifecycle dynamics, playlist churn, and content maturity of songs in Spain’s Top 50 playlist using streaming data analytics.
 
-\begin{abstract}
-This study analyzes lifecycle dynamics of songs in Spain’s Top 50 playlist using exploratory data analysis. Results indicate a high-churn ecosystem characterized by short lifecycles, rapid time-to-peak, and strong preference for new content. Content attributes such as explicit labeling and release format influence retention patterns. The findings provide actionable insights for optimizing release strategies and playlist performance.
-\end{abstract}
+The project explores:
+- ⏳ Song lifecycle analysis
+- 🔄 Playlist churn & retention
+- 🎼 Content maturity insights
+- 📈 Streaming behavior trends
+- 📊 Interactive dashboard analytics
 
-\begin{IEEEkeywords}
-Playlist Analytics, Lifecycle Analysis, Music Streaming, Churn, EDA
-\end{IEEEkeywords}
+---
 
-% ===============================
-\section{Introduction}
-Streaming platforms have transformed music consumption, with playlists acting as primary discovery mechanisms. Spain represents a high-churn market where content lifecycle dynamics differ significantly from global averages.
+# 🎯 Objectives
 
-% ===============================
-\section{Methodology}
+- Build lifecycle models for songs
+- Analyze playlist entry and exit behavior
+- Measure churn rates
+- Compare explicit vs non-explicit content
+- Compare album tracks vs singles
+- Generate strategic business recommendations
 
-\subsection{Dataset}
-Daily Top 50 playlist data including song metadata, ranking position, and content attributes.
+---
 
-\subsection{Lifecycle Metrics}
-\begin{itemize}
-\item Entry Date
-\item Exit Date
-\item Days on Playlist
-\item Peak Position
-\item Time to Peak
-\end{itemize}
+# 📁 Project Structure
 
-\subsection{Churn Analysis}
-Churn is defined as the proportion of songs replaced daily.
+```bash
+Spain-Top-50-Music-Lifecycle-Intelligence-Analysis/
+│
+├── data/
+│   └── Atlantic_Spain.csv
+│
+├── dashboard/
+│   └── app.py
+│
+├── outputs/
+│   ├── charts/
+│   ├── lifecycle_summary.csv
+│   └── churn_analysis.csv
+│
+├── notebooks/
+│   └── eda.ipynb
+│
+├── research_paper/
+│   └── paper.pdf
+│
+├── requirements.txt
+└── README.md
+```
 
-% ===============================
-\section{Results}
+---
 
-\subsection{Lifecycle Distribution}
+# ⚙️ Tech Stack
 
-\begin{figure}[h]
-\centering
-\includegraphics[width=0.45\textwidth]{lifecycle_distribution.png}
-\caption{Distribution of Days on Playlist}
-\end{figure}
+| Technology | Usage |
+|---|---|
+| Python | Data Analysis |
+| Pandas | Data Processing |
+| NumPy | Numerical Computing |
+| Matplotlib | Visualization |
+| Streamlit | Dashboard |
 
-Most songs exhibit short lifecycles, with only a few achieving long-term retention.
+---
 
-% -------------------------------
-\subsection{Time to Peak}
+# 🚀 Run Locally
 
-\begin{figure}[h]
-\centering
-\includegraphics[width=0.45\textwidth]{time_to_peak.png}
-\caption{Time to Peak Distribution}
-\end{figure}
+## 1️⃣ Clone Repository
 
-Songs reach peak performance early, indicating front-loaded engagement.
+```bash
+git clone https://github.com/your-username/Spain-Top-50-Music-Lifecycle-Intelligence-Analysis.git
+```
 
-% -------------------------------
-\subsection{Playlist Churn}
+---
 
-\begin{figure}[h]
-\centering
-\includegraphics[width=0.45\textwidth]{churn_rate.png}
-\caption{Daily Playlist Churn Rate}
-\end{figure}
+## 2️⃣ Move Into Folder
 
-High churn confirms frequent playlist rotation.
+```bash
+cd Spain-Top-50-Music-Lifecycle-Intelligence-Analysis
+```
 
-% -------------------------------
-\subsection{Average Position Stability}
+---
 
-\begin{figure}[h]
-\centering
-\includegraphics[width=0.45\textwidth]{avg_position.png}
-\caption{Average Position Over Time}
-\end{figure}
+## 3️⃣ Install Dependencies
 
-Despite stable averages, internal playlist composition changes significantly.
+```bash
+pip install -r requirements.txt
+```
 
-% -------------------------------
-\subsection{Content Maturity Analysis}
+---
 
-\begin{figure}[h]
-\centering
-\includegraphics[width=0.45\textwidth]{explicit_vs_clean.png}
-\caption{Explicit vs Non-Explicit Lifecycle}
-\end{figure}
+## 4️⃣ Run Streamlit App
 
-Non-explicit content shows slightly higher retention.
+```bash
+streamlit run dashboard/app.py
+```
 
-% -------------------------------
-\subsection{Album vs Single Performance}
+---
 
-\begin{figure}[h]
-\centering
-\includegraphics[width=0.45\textwidth]{album_vs_single.png}
-\caption{Album vs Single Lifecycle}
-\end{figure}
+# 🌐 Live Demo
 
-Singles outperform album tracks in lifecycle duration.
+👉 Streamlit Cloud link here
 
-% ===============================
-\section{Discussion}
+https://spain-top-50-playlist-lifecycle-analysis-ctifb5njvdoswnj6ng3wy.streamlit.app/
+```
 
-The Spanish music market demonstrates a compressed lifecycle model where songs rise and decline rapidly. Success is driven by early engagement and frequent content release.
+---
 
-% ===============================
-\section{Strategic Implications}
+# 📊 Sample Visualizations
 
-\begin{itemize}
-\item Focus marketing in first 7 days
-\item Prioritize single releases
-\item Increase release frequency
-\item Optimize content attributes
-\end{itemize}
+## 🎼 Lifecycle Distribution
 
-% ===============================
-\section{Conclusion}
+![Lifecycle](outputs/charts/lifecycle_distribution.png)
 
-Spain’s playlist ecosystem is high-churn and fast-moving, requiring data-driven strategies for success.
+---
 
-% ===============================
-\begin{thebibliography}{00}
+## 🔄 Playlist Churn
 
-\bibitem{b1} Ò. Celma, \textit{Music Recommendation Systems}. Springer, 2010.
+![Churn](outputs/charts/churn_rate.png)
 
-\bibitem{b2} C. Anderson, \textit{The Long Tail}. Hyperion, 2006.
+---
 
-\bibitem{b3} H. Datta et al., "Streaming and Music Consumption," Marketing Science, 2018.
+## ⏱ Time to Peak
 
-\end{thebibliography}
+![Peak](outputs/charts/time_to_peak.png)
 
-\end{document}
+---
+
+# 📈 Key Insights
+
+- High playlist churn indicates rapid turnover
+- Songs peak early after release
+- New content dominates playlist entries
+- Singles outperform album tracks
+- Non-explicit songs retain audiences longer
+
+---
+
+# 📄 Research Paper
+
+This project includes:
+- Exploratory Data Analysis (EDA)
+- Lifecycle modeling
+- Churn analysis
+- Strategic recommendations
+- IEEE-style formatted research paper
+
+---
+
+# 💼 Business Impact
+
+This analysis helps:
+- Optimize release strategies
+- Improve playlist visibility
+- Understand audience engagement
+- Build data-driven music marketing strategies
+
+---
+
+# 👨‍💻 Author
+
+## Kaushik Prasad
+
+Data Analyst
+📧 Email: kaushikprashad1234@gmail.com
+
+🔗 LinkedIn
+
+https://www.linkedin.com/in/kaushik-prashad-01416a235?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app
+
+🔗 Portfolio
+
+---
+
+# ⭐ Future Improvements
+
+- Plotly interactive visualizations
+- Machine learning hit prediction
+- Retention curve modeling
+- Cross-country playlist comparison
+- Recommendation engine integration
+
+---
+
+# 📜 License
+
+This project is intended for educational and analytical purposes.
