@@ -53,7 +53,6 @@ Spain-Top-50-Music-Lifecycle-Intelligence-Analysis/
 ├── research_paper/
 │   └── paper.pdf
 │
-├── requirements.txt
 └── README.md
 ```
 
