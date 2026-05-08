@@ -150,7 +150,7 @@ This project includes:
 - Lifecycle modeling
 - Churn analysis
 - Strategic recommendations
-- IEEE-style formatted research paper
+- Research paper
 
 ---
 
